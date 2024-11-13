@@ -16,3 +16,4 @@ const BottomActions = memo(() => {
     ) : null
   );
 });
+export default BottomActions;
