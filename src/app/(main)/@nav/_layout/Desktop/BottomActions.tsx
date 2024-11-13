@@ -7,7 +7,6 @@ import { useTranslation } from 'react-i18next';
 import { featureFlagsSelectors, useServerConfigStore } from '@/store/serverConfig';
 
 const BottomActions = memo(() => {
-  const { t } = useTranslation('common');
   const { hideGitHub } = useServerConfigStore(featureFlagsSelectors);
 
   return (
