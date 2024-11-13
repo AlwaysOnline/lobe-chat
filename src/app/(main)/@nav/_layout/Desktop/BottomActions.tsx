@@ -8,7 +8,7 @@ import { featureFlagsSelectors, useServerConfigStore } from '@/store/serverConfi
 
 const BottomActions = memo(() => {
   const { t } = useTranslation('common');
-  const { hideGitHub, hideDocs } = useServerConfigStore(featureFlagsSelectors);
+  const { hideGitHub } = useServerConfigStore(featureFlagsSelectors);
 
   return (
     <>
