@@ -9,14 +9,10 @@ const BottomActions = memo(() => {
   const { hideGitHub } = useServerConfigStore(featureFlagsSelectors);
 
   return (
-    <>
-      {!hideGitHub && (
-        <Link aria-label={'GitHub'} href="https://guilin.app" target={'_blank'}>
-          <ActionIcon icon={Github} placement={'right'} title={'GitHub'} />
-        </Link>
-      )}
-    </>
+    !hideGitHub ? (
+      <Link aria-label={'GitHub'} href="https://guilin.app" target={'_blank'}>
+        <ActionIcon icon={Github} placement={'right'} title={'GitHub'} /> {/* GitHub 图标 */}
+      </Link>
+    ) : null
   );
 });
-
-export default BottomActions;
